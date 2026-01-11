@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>    Catalogue Search
+</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="https://azfilter.jp/website-assets/css/style.min.css?_v=20231220">
+    <link rel="shortcut icon" href="https://azfilter.jp/website-assets/img/favicon.ico">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://azfilter.jp/website-assets/css/custom.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DYVSX89YR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4DYVSX89YR');
+    </script>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header class="header ">
+    <div class="loader d-none" id="page-loader">
+        <div class="overlay-screen-lock"></div>
+        <div class="loader-loading"></div>
+    </div>
+    <div class="header__container">
+        <button type="button" class="header__menu-icon icon-menu"><span></span></button>
+        <a href="https://azfilter.jp" class="header__logo"><img
+                    src="https://azfilter.jp/website-assets/img/logo.svg?v0.1"
+                    alt=""></a>
+        <div class="header__menu menu">
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item ">
+                        <a href="https://azfilter.jp/company/about"
+                           class="menu__link">Company</a>
+                    </li>
+
+                    <li class="menu__item ">
+                        <a href="https://azfilter.jp/products" class="menu__link">Products</a>
+                    </li>
+
+                    <li class="menu__item menu__item_active">
+                        <a href="https://azfilter.jp/catalogue/catalogue"
+                           class="menu__link">Catalogue</a>
+                    </li>
+
+                    <li class="menu__item ">
+                        <a href="https://azfilter.jp/contacts"
+                           class="menu__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a href="" class="header__button btn-red"
+           data-popup="#contact-us">Contact us</a>
+        <div class="header__languages languages" data-da=".mobile-menu__header, 1279.98">
+            <div class="languages__body">
+                <ul class="languages__list">
+                    <li class="languages__item languages__item_active">
+                        <a href="https://azfilter.jp/change-language/en" class="languages__link">
+                            EN
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/ja" class="languages__link">
+                            JA
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/es" class="languages__link">
+                            ES
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/de" class="languages__link">
+                            DE
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/vi" class="languages__link">
+                            VI
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/ms" class="languages__link">
+                            MS
+                        </a>
+                    </li>
+                    <li class="languages__item ">
+                        <a href="https://azfilter.jp/change-language/id" class="languages__link">
+                            IN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile-menu mobile-menu">
+        <div class="mobile-menu__header"></div>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <span class="mobile-menu__subitem">Company</span>
+                <ul class="mobile-menu__sublist">
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/company/about"
+                           class="mobile-menu__link">About us</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/company/materials-technology"
+                           class="mobile-menu__link">Materials &amp; Technologies</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/company/certificate"
+                           class="mobile-menu__link">Certificates &amp; Warranty</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/company/4a-bio"
+                           class="mobile-menu__link">4A BIO</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <span class="mobile-menu__subitem">Products</span>
+                <ul class="mobile-menu__sublist">
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/products/oil-filters"
+                           class="mobile-menu__link">Oil</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/products/air-filters"
+                           class="mobile-menu__link">AIR</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/products/cabin-filters"
+                           class="mobile-menu__link">Cabin</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/products/transmission-filters"
+                           class="mobile-menu__link">TRANSMISSION</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="https://azfilter.jp/products/fuel-filters"
+                           class="mobile-menu__link">Fuel</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="https://azfilter.jp/catalogue/catalogue" class="mobile-menu__link">Catalogue</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="https://azfilter.jp/contacts" class="mobile-menu__link">Contacts</a>
+            </li>
+        </ul>
+    </div>
+</header>
+    
+
+        <main class="page header-margin catalog">
+                <div class="catalog__container">
+                        <div class="catalog__container alert alert-danger js-error d-none" role="alert">
+                <div class="page-message js-validation-error"></div>
+            </div>
+            <h1 class="catalog__title page-title">CATALOGUE SEARCH</h1>
+            <div>
+    <div data-tabs data-tabs-animate="300" class="catalog__tabs">
+        <nav data-tabs-titles class="catalog__tab-navigation">
+            <button type="button" class="catalog__tab-title _tab-active">
+                Product
+            </button>
+            <button type="button" class="catalog__tab-title ">
+                Application
+            </button>
+            <button type="button" class="catalog__tab-title ">
+                By size
+            </button>
+        </nav>
+        <div data-tabs-body class="catalog__tab-content">
+            <div class="catalog__tab-body">
+                <form action="https://azfilter.jp/catalogue/catalogue/search-part-number" autocomplete="off"
+                    id="catalogue-part-form" class="form product-search-form">
+                    <div class="form__row">
+                        <div class="form__line">
+                            <label class="form__label">
+                                <input type="search" data-error="Error"
+                                    placeholder="Enter AZFilter No, OEM No, Other No.." class="form__input"
+                                    name="product_id" id="partno-search">
+                            </label>
+                        </div>
+                        <button type="submit" class="form__button">Search</button>
+                    </div>
+                    <div id="part-suggestions"></div>
+                </form>
+            </div>
+            <div class="catalog__tab-body">
+                <form action="https://azfilter.jp/catalogue/catalogue/application" class="form application-search-form"
+                    method="get" id="catalogueSearchForm">
+                    <div class="form__grid" data-one-select>
+                        <div class="form__line">
+                            <label for="selBrand"></label>
+                            <select name="brand_id" class="form__select" id="selBrand"
+                                data-live-search="true" data-size="10"
+                                title="Select Brand">
+                                                                    <option value="1">ACURA</option>
+                                                                    <option value="2">ALFA ROMEO</option>
+                                                                    <option value="3">ASIA MOTORS</option>
+                                                                    <option value="4">ASTON MARTIN</option>
+                                                                    <option value="5">AUDI</option>
+                                                                    <option value="6">BENTLEY</option>
+                                                                    <option value="7">BMW</option>
+                                                                    <option value="8">BMW (Alpina)</option>
+                                                                    <option value="10">BUICK (GM)</option>
+                                                                    <option value="12">CADILLAC (GM)</option>
+                                                                    <option value="15">CHEVROLET (GM)</option>
+                                                                    <option value="16">CHRYSLER</option>
+                                                                    <option value="18">CITROEN</option>
+                                                                    <option value="20">DAEWOO</option>
+                                                                    <option value="22">DAIHATSU</option>
+                                                                    <option value="23">DAIHATSU (Piaggio)</option>
+                                                                    <option value="24">DODGE</option>
+                                                                    <option value="25">FERRARI</option>
+                                                                    <option value="26">FIAT</option>
+                                                                    <option value="27">FORD</option>
+                                                                    <option value="28">MERCURY (FORD)</option>
+                                                                    <option value="29">FORD (USA)</option>
+                                                                    <option value="31">HINO</option>
+                                                                    <option value="32">HONDA</option>
+                                                                    <option value="35">HUMMER</option>
+                                                                    <option value="36">HYUNDAI</option>
+                                                                    <option value="37">INFINITI</option>
+                                                                    <option value="38">ISUZU</option>
+                                                                    <option value="39">IVECO</option>
+                                                                    <option value="40">JAGUAR</option>
+                                                                    <option value="42">JEEP</option>
+                                                                    <option value="43">KIA</option>
+                                                                    <option value="44">LADA</option>
+                                                                    <option value="45">LANCIA</option>
+                                                                    <option value="46">LAND ROVER</option>
+                                                                    <option value="48">LEXUS</option>
+                                                                    <option value="49">LIGIER AUTOMOBILES</option>
+                                                                    <option value="50">LINCOLN</option>
+                                                                    <option value="51">LONDON TAXI (Carbodies)</option>
+                                                                    <option value="53">LOTUS</option>
+                                                                    <option value="54">MASERATI</option>
+                                                                    <option value="55">MAZDA</option>
+                                                                    <option value="56">MAZDA JAPAN FORD</option>
+                                                                    <option value="58">MERCEDES-BENZ</option>
+                                                                    <option value="59">MICROCAR</option>
+                                                                    <option value="60">MINI</option>
+                                                                    <option value="61">MITSUBISHI</option>
+                                                                    <option value="62">NISSAN</option>
+                                                                    <option value="63">NISSAN DIESEL UD</option>
+                                                                    <option value="65">OLDSMOBILE (GM)</option>
+                                                                    <option value="66">OPEL</option>
+                                                                    <option value="67">OPEL (Vauxhall)</option>
+                                                                    <option value="68">PERODUA</option>
+                                                                    <option value="69">PEUGEOT</option>
+                                                                    <option value="70">PEUGEOT(Mega/Aixav)</option>
+                                                                    <option value="72">PONTIAC (GM)</option>
+                                                                    <option value="73">PORSCHE</option>
+                                                                    <option value="74">PROTON</option>
+                                                                    <option value="75">RENAULT</option>
+                                                                    <option value="76">ROLLS-ROYCE</option>
+                                                                    <option value="77">ROVER</option>
+                                                                    <option value="79">SAAB</option>
+                                                                    <option value="80">SANTANA MOTOR</option>
+                                                                    <option value="81">SEAT</option>
+                                                                    <option value="82">SKODA</option>
+                                                                    <option value="83">SMART</option>
+                                                                    <option value="84">SSANGYONG</option>
+                                                                    <option value="85">SUBARU</option>
+                                                                    <option value="86">SUZUKI</option>
+                                                                    <option value="87">TATA MOTORS</option>
+                                                                    <option value="88">TOYOTA</option>
+                                                                    <option value="90">VOLVO</option>
+                                                                    <option value="91">VOLKSWAGEN</option>
+                                                                    <option value="92">ZASTAVA</option>
+                                                                    <option value="93">HOLDEN</option>
+                                                                    <option value="96">DACIA (Renault)</option>
+                                                                    <option value="99">BOBCAT</option>
+                                                                    <option value="100">KOMATSU</option>
+                                                                    <option value="101">SCANIA</option>
+                                                                    <option value="227">ARO</option>
+                                                                    <option value="232">GAZ</option>
+                                                                    <option value="236">LDV (Leyland-Daf Vans)</option>
+                                                                    <option value="237">MG (SAIC)</option>
+                                                                    <option value="238">MOSKVICH (AZLK)</option>
+                                                                    <option value="241">UAZ</option>
+                                                                    <option value="247">KAMAZ</option>
+                                                                    <option value="249">MAN TRUCK</option>
+                                                                    <option value="264">KUBOTA</option>
+                                                                    <option value="271">DAF</option>
+                                                                    <option value="272">BOVA</option>
+                                                                    <option value="274">CATERPILLAR</option>
+                                                                    <option value="278">HOWO</option>
+                                                                    <option value="279">KING LONG BUS</option>
+                                                                    <option value="285">DATSUN</option>
+                                                                    <option value="343">JOHN DEERE</option>
+                                                                    <option value="354">LIFAN</option>
+                                                                    <option value="424">DONGFENG</option>
+                                                                    <option value="426">LAMBORGHINI</option>
+                                                                    <option value="428">LUXGEN</option>
+                                                                    <option value="429">MITSUOKA</option>
+                                                                    <option value="431">GEELY</option>
+                                                                    <option value="440">NAZA</option>
+                                                                    <option value="441">MAHINDRA</option>
+                                                                    <option value="442">MARUTI SUZUKI</option>
+                                                                    <option value="443">TESLA</option>
+                                                                    <option value="444">FOTON</option>
+                                                                    <option value="445">JAC</option>
+                                                                    <option value="446">RAVON</option>
+                                                                    <option value="447">BAW</option>
+                                                                    <option value="448">CHERY</option>
+                                                                    <option value="449">Great Wall Motors</option>
+                                                                    <option value="451">Yuchai</option>
+                                                                    <option value="453">BYD</option>
+                                                                    <option value="454">CHEVROLET (SGM)</option>
+                                                                    <option value="455">SAIC</option>
+                                                                    <option value="460">FENDT(AGCO)</option>
+                                                                    <option value="461">JMC</option>
+                                                                    <option value="462">CHANGAN</option>
+                                                                    <option value="463">GMC</option>
+                                                                    <option value="464">BRILLIANCE</option>
+                                                                    <option value="465">ZX AUTO (Zhongxing)</option>
+                                                                    <option value="468">GENESIS</option>
+                                                                    <option value="469">SAMSUNG</option>
+                                                                    <option value="470">FAW</option>
+                                                                    <option value="471">PLYMOUTH</option>
+                                                                    <option value="472">EXEED (CHERY)</option>
+                                                                    <option value="473">YUTONG</option>
+                                                                    <option value="474">NEOPLAN</option>
+                                                                    <option value="475">FREIGHTLINER</option>
+                                                                    <option value="476">GAC</option>
+                                                                    <option value="477">JCB</option>
+                                                                    <option value="478">MAXUS</option>
+                                                                    <option value="479">HAVAL</option>
+                                                                    <option value="480">CUPRA</option>
+                                                                    <option value="481">ISEKI</option>
+                                                                    <option value="482">DOOSAN</option>
+                                                                    <option value="484">SOUEAST</option>
+                                                                    <option value="486">HYUNDAI (BEIJING)</option>
+                                                                    <option value="487">KIA (DYK)</option>
+                                                                    <option value="489">OMODA (CHERY)</option>
+                                                                    <option value="492">BAIC</option>
+                                                                    <option value="493">JETOUR</option>
+                                                                    <option value="495">LiXIANG</option>
+                                                                    <option value="496">ZEEKR</option>
+                                                                    <option value="497">TANK</option>
+                                                                    <option value="499">AVATR</option>
+                                                                    <option value="501">ZOTYE</option>
+                                                                    <option value="503">RAM</option>
+                                                                    <option value="504">LYNK &amp; CO</option>
+                                                                    <option value="508">FORTHING</option>
+                                                                    <option value="509">HIPHI</option>
+                                                                    <option value="510">VOYAH</option>
+                                                                    <option value="511">KAIYI</option>
+                                                                    <option value="512">MITSUBISHI (GAC)</option>
+                                                                    <option value="513">MAZDA (CHANGAN)</option>
+                                                                    <option value="514">MAZDA (FAW)</option>
+                                                                    <option value="515">SKODA (SVW)</option>
+                                                                    <option value="516">JETTA</option>
+                                                                    <option value="517">JAECOO (CHERY)</option>
+                                                                    <option value="518">HONGQI</option>
+                                                                    <option value="521">WEY</option>
+                                                                    <option value="522">AITO</option>
+                                                                    <option value="523">LIVAN</option>
+                                                                    <option value="525">KG MOBILITY</option>
+                                                                    <option value="526">XCITE</option>
+                                                                    <option value="527">HONDA (GAC)</option>
+                                                                    <option value="528">HONDA (DONGFENG)</option>
+                                                                    <option value="529">ORA</option>
+                                                                    <option value="530">XIAOMI</option>
+                                                                    <option value="531">VOLKSWAGEN (FAW)</option>
+                                                                    <option value="532">VOLKSWAGEN (SVW)</option>
+                                                                    <option value="533">AUDI (FAW)</option>
+                                                                    <option value="534">AUDI (SAIC)</option>
+                                                                    <option value="535">INFINITI (DFAC)</option>
+                                                                    <option value="536">NISSAN (DFAC)</option>
+                                                                    <option value="537">TOYOTA (FAW)</option>
+                                                                    <option value="538">TOYOTA (GAC)</option>
+                                                                    <option value="539">BELGEE</option>
+                                                                    <option value="540">MERCEDES-BENZ (BBDC)</option>
+                                                                    <option value="541">CITROËN (DF-PSA)</option>
+                                                                    <option value="542">PEUGEOT (DF-PSA)</option>
+                                                                    <option value="543">FORD (JMC)</option>
+                                                                    <option value="544">SERES</option>
+                                                                    <option value="547">ACURA (GAC)</option>
+                                                                    <option value="548">EVOLUTE</option>
+                                                                    <option value="549">DEEPAL</option>
+                                                                    <option value="550">DS</option>
+                                                                    <option value="552">TENET</option>
+                                                                    <option value="553">ROX</option>
+                                                            </select>
+                        </div>
+                        <div class="form__line">
+                            <label for="selClass"></label>
+                            <select name="model_id[]" multiple class="form__select" id="selClass"
+                                data-live-search="true" data-max-options="20"
+                                data-group-select-options="true"
+                                title="Select Class &amp; Model">
+                            </select>
+                        </div>
+                        <div class="form__line">
+                            <label for="selBody"></label>
+                            <select class="form__select" data-max-options="50" data-live-search="true" multiple=""
+                                data-size="10" data-actions-box="true"
+                                title="Select IMG &amp; Body"
+                                data-group-select-options="true" name="body[]" id="selBody">
+                            </select>
+                        </div>
+                        <div class="form__line">
+                            <label for="selYear"></label>
+                            <select name="year[]" id="selYear" data-live-search="true"
+                                multiple="" data-size="10" data-actions-box="true"
+                                title="Select Year">
+                            </select>
+                            <div style="color: #3c763d; margin-top: 5px;">(Optional)</div>
+                        </div>
+                        <div class="form__line">
+                            <label for="selEngine"></label>
+                            <select name="eng_no[]" multiple class="form__select" id="selEngine"
+                                data-live-search="true" data-size="10" data-actions-box="true"
+                                title="Select Engines No">
+                            </select>
+                            <div style="color: #3c763d; margin-top: 5px;">(Optional)</div>
+                        </div>
+                        <div class="form__line">
+                            <label for="selEnginevolume"></label>
+                            <select name="engine[]" multiple class="form__select" id="selEnginevolume"
+                                data-live-search="true" data-size="10"
+                                data-actions-box="true"
+                                title="Select Engines Volumes">
+                            </select>
+                            <div style="color: #3c763d; margin-top: 5px;">(Optional)
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="form__button">Search</button>
+                </form>
+            </div>
+            <div class="catalog__tab-body">
+                <form action="https://azfilter.jp/catalogue/catalogue/product-size" method="get"
+                    class="form size-search-form" id="by-size-form">
+                    <div class="form__line">
+                        <label for="ss_type_id_js"></label>
+                        <select name="type_id" class="form__select select-type" id="ss_type_id_js"
+                            data-live-search="true" data-size="10"
+                            title="Select Type">
+                                                            <option value="25">
+                                    AIR FILTER
+                                </option>
+                                                            <option value="28">
+                                    AIR FILTER (DRYER SPIN ON)
+                                </option>
+                                                            <option value="7">
+                                    CABIN FILTER
+                                </option>
+                                                            <option value="469">
+                                    CABIN FILTER BIOFUNCTIONAL
+                                </option>
+                                                            <option value="33">
+                                    DIESEL FILTER (INJECTOR)
+                                </option>
+                                                            <option value="11">
+                                    DIESEL FILTER (SPIN-ON)
+                                </option>
+                                                            <option value="12">
+                                    FUEL FILTER (ELEMENT)
+                                </option>
+                                                            <option value="16">
+                                    FUEL FILTER (IN-TANK)
+                                </option>
+                                                            <option value="401">
+                                    FUEL FILTER ASS~Y (IN-TANK)
+                                </option>
+                                                            <option value="133">
+                                    FUEL STRAINER
+                                </option>
+                                                            <option value="24">
+                                    HYDRAULIC FILTER ELEMENT
+                                </option>
+                                                            <option value="31">
+                                    HYDRAULIC FILTER SPIN-ON
+                                </option>
+                                                            <option value="445">
+                                    IN-TANK FUEL PUMP
+                                </option>
+                                                            <option value="444">
+                                    MANUAL DIESEL PUMP
+                                </option>
+                                                            <option value="9">
+                                    OIL FILTER (ELEMENT)
+                                </option>
+                                                            <option value="8">
+                                    OIL FILTER (SPIN-ON)
+                                </option>
+                                                            <option value="32">
+                                    PETROL FILTER (INJECTOR &amp; CARBURETOR)
+                                </option>
+                                                            <option value="443">
+                                    SENSOR FUEL FILTER
+                                </option>
+                                                            <option value="17">
+                                    TRANSMISSION FILTER
+                                </option>
+                                                    </select>
+                    </div>
+                    <div class="form__sizes d-none" id="specs-form" data-one-select>
+                        <div class="form__text">Enter Size +/- (mm)</div>
+                        <div class="specs-container">
+
+                        </div>
+                    </div>
+                    <button type="submit" class="form__button">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+                    <div class="search-result">
+                                    <div class="search-result__container">
+                        <div class="catalog__container alert alert-warning" role="alert">
+                            <div class="page-message">
+                                Search Result for
+                                <strong>FORD - YC1H19N619AB</strong> Returns
+                                <strong>AZUMI - AC51083</strong>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="search-result__container">
+                    <div class="search-res-card">
+                        <div class="search-res-card__header">
+                            <h2 class="search-res-card__title">CABIN FILTER
+                                | AZUMI -
+                                AC51083</h2>
+                            <button type="button" class="search-res-card__feedback feedback-btn"
+                                    data-popup="#feedback">Feedback
+                            </button>
+                        </div>
+                        <div class="search-res-card__row">
+                            <div class="search-res-card__image">
+                                                                                                            <img src="https://azfilter.jp/images/8e82ab7243b7c66d768f1b8ce1c967eb/watermark_images/2852ffe9cccef383a2f5319e1d361971.jpg" alt="">
+                                                                                                </div>
+                                                            <div class="search-res-card__specification">
+                                    <div class="search-res-card__subtitle">Specification</div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Length</div>
+                                            <div class="search-res-card__value">355.5 / 367</div>
+                                        </div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Width</div>
+                                            <div class="search-res-card__value">124</div>
+                                        </div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Structure Material</div>
+                                            <div class="search-res-card__value">Flexible</div>
+                                        </div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Thickness</div>
+                                            <div class="search-res-card__value">26.5</div>
+                                        </div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Media Material</div>
+                                            <div class="search-res-card__value">Synthetic Fiber</div>
+                                        </div>
+                                                                            <div class="search-res-card__line">
+                                            <div class="search-res-card__name">Location</div>
+                                            <div class="search-res-card__value">Cabin</div>
+                                        </div>
+                                                                                                        </div>
+                                                    </div>
+                    </div>
+                                                                <div class="search-res-crosses">
+                            <div class="search-res-crosses__title">Crosses</div>
+                            <div class="search-res-crosses__row">
+                                                                    <div class="search-res-crosses__col">
+                                        <div class="search-res-crosses__headline">
+                                            <div class="search-res-crosses__col-name">Owner</div>
+                                            <div class="search-res-crosses__col-name">Number</div>
+                                        </div>
+                                                                                    <div class="search-res-crosses__line">
+                                                <div class="search-res-crosses__name">FORD</div>
+                                                <div class="search-res-crosses__value">1 459 009</div>
+                                            </div>
+                                                                                    <div class="search-res-crosses__line">
+                                                <div class="search-res-crosses__name">FORD</div>
+                                                <div class="search-res-crosses__value">1353267</div>
+                                            </div>
+                                                                                    <div class="search-res-crosses__line">
+                                                <div class="search-res-crosses__name">FORD</div>
+                                                <div class="search-res-crosses__value">4042703</div>
+                                            </div>
+                                                                            </div>
+                                                                    <div class="search-res-crosses__col">
+                                        <div class="search-res-crosses__headline">
+                                            <div class="search-res-crosses__col-name">Owner</div>
+                                            <div class="search-res-crosses__col-name">Number</div>
+                                        </div>
+                                                                                    <div class="search-res-crosses__line">
+                                                <div class="search-res-crosses__name">FORD</div>
+                                                <div class="search-res-crosses__value">YC1H19N619AB</div>
+                                            </div>
+                                                                                    <div class="search-res-crosses__line">
+                                                <div class="search-res-crosses__name">FORD</div>
+                                                <div class="search-res-crosses__value">YC1J19N619AB</div>
+                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                                                <div class="search-res-application">
+                            <div class="search-res-application__header">
+                                <div class="search-res-application__title">Application</div>
+                            </div>
+                            <div data-spollers class="spollers">
+                                                                                                                                                        <div class="spollers__item">
+                                                <button type="button" data-spoller class="spollers__title">
+                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619">
+                                                        FORD » Transit
+                                                    </a>
+                                                </button>
+                                                <div class="spollers__body">
+                                                    <div class="search-res-application__lines">
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY&amp;eng_no%5B%5D=E5FA&amp;engine%5B%5D=2300&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            03.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.3L E5FA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY&amp;eng_no%5B%5D=D2FA&amp;engine%5B%5D=2400&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            03.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.4L D2FA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY&amp;eng_no%5B%5D=D4FA&amp;engine%5B%5D=2400&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            03.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.4L D4FA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY&amp;eng_no%5B%5D=D2FE&amp;engine%5B%5D=2400&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            03.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.4L D2FE
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY%20-%20FY&amp;eng_no%5B%5D=D3FA&amp;engine%5B%5D=2000&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            06.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.0L D3FA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY%20-%20KOMBI%20300%20SER.&amp;eng_no%5B%5D=ABFA&amp;engine%5B%5D=2000&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            08.00
+                                                                            ~07.06
+                                                                        </div>
+                                                                                                                                        KOMBI 300 SER. , Eng: 2.0L ABFA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY%20-%20FY&amp;eng_no%5B%5D=FIFA&amp;engine%5B%5D=2000&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            08.00
+                                                                            ~12.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.0L FIFA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=FY%20-%20FY&amp;eng_no%5B%5D=FXFA%20%28115PS%29&amp;engine%5B%5D=2400&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            03.04
+                                                                            ~12.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.4L FXFA (115PS)
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    (+A/C)
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=TT9%20-%20TT9&amp;eng_no%5B%5D=T23HDEX%20%28145PS%29&amp;engine%5B%5D=2300&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            04.06
+                                                                            ~12.14
+                                                                        </div>
+                                                                                                                                        TT9 , Eng: 2.3L T23HDEX (145PS)
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=619&amp;body%5B%5D=TT9&amp;eng_no%5B%5D=SAFA&amp;engine%5B%5D=3200&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            08.07
+                                                                            ~12.14
+                                                                        </div>
+                                                                                                                                        TT9 , Eng: 3.2L SAFA
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="spollers__item">
+                                                <button type="button" data-spoller class="spollers__title">
+                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=627">
+                                                        FORD » Transit 350
+                                                    </a>
+                                                </button>
+                                                <div class="spollers__body">
+                                                    <div class="search-res-application__lines">
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=627&amp;body%5B%5D=FY%20-%20FY&amp;eng_no%5B%5D=AI&amp;engine%5B%5D=2400&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            01.00
+                                                                            ~12.06
+                                                                        </div>
+                                                                                                                                        FY , Eng: 2.4L AI
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                                                                    <div class="spollers__item">
+                                                <button type="button" data-spoller class="spollers__title">
+                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=635">
+                                                        FORD » Transit VII Bus
+                                                    </a>
+                                                </button>
+                                                <div class="spollers__body">
+                                                    <div class="search-res-application__lines">
+                                                                                                                    <a href="https://azfilter.jp/catalogue/catalogue/application?brand_id=27&amp;model_id%5B%5D=635&amp;body%5B%5D=TT9&amp;eng_no%5B%5D=UHFB&amp;engine%5B%5D=2200&amp;product_id=496404"
+                                                               class="search-res-application__line">
+                                                                <div class="search-res-application__article">
+                                                                                                                                            <div class="application-date">
+                                                                            10.07
+                                                                            ~
+                                                                        </div>
+                                                                                                                                        TT9 , Eng: 2.2L UHFB
+                                                                </div>
+                                                                <div class="search-res-application__text">
+                                                                    (Cabin)
+                                                                    
+                                                                    
+                                                                </div>
+                                                            </a>
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                                                                                                                            <button type="button" class="search-res-card__feedback mobile-feedback-btn"
+                                        data-popup="#feedback">Feedback
+                                </button>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        
+            </main>
+
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__grid">
+            <div class="footer__copyright">
+                <a href="https://azfilter.jp" class="footer__logo">
+                    <img src="https://azfilter.jp/website-assets/img/footer-new-logo.svg" alt="">
+                </a>
+                <div class="footer__text">AZUMI © 2026 PRIVACY POLICY</div>
+            </div>
+            <nav class="footer__menu">
+                <div class="menu-footer">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a href="https://azfilter.jp/company/about"
+                               class="menu-footer__link">Company</a>
+                        </li>
+
+                        <li class="menu-footer__item">
+                            <a href="https://azfilter.jp/products"
+                               class="menu-footer__link">Products</a>
+                        </li>
+
+                        <li class="menu-footer__item">
+                            <a href="https://azfilter.jp/catalogue/catalogue"
+                               class="menu-footer__link">Catalogue</a>
+                        </li>
+
+                        <li class="menu-footer__item">
+                            <a href="https://azfilter.jp/contacts"
+                               class="menu-footer__link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+</div>
+<div id="video" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close"><img src="https://azfilter.jp/website-assets/img/close.svg"
+                                                                       alt="">
+            </button>
+
+            <div class="video-container">
+                <video controls>
+                    <source src="https://azfilter.jp/website-assets/video/AZUMI_video_presentation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="contact-us" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close"><img src="https://azfilter.jp/website-assets/img/close.svg"
+                                                                       alt=""></button>
+            <div class="popup__title">CONTACT US</div>
+            <div class="catalog__container modal-alert alert d-none" role="alert">
+                <div class="alert-message"></div>
+            </div>
+            <div class="popup__form">
+                <form action="#" method="post" class="form" id="contactModalForm">
+                    <input type="hidden" name="_token" value="LCycwhhArRJSx7qwpBdlCJbzhEnF25ZMLUD3Q3mN">                    <div class="form__line">
+                        <select data-custom-select name="country_name" data-class-modif="country"
+                                class="form__select" data-size="10"
+                                data-live-search="true" title="Select country">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Central African, Centrafrique">Central African,
+                                Centrafrique
+                            </option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="(Democratic Republic of the Congo)">(Democratic Republic of the Congo)
+                            </option>
+                            <option value="Congo">Congo</option>
+                            <option value="(Republic of Congo)">(Republic of Congo)</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Czech">Czech</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="(Commonwealth of Dominica)">(Commonwealth of Dominica)</option>
+                            <option value="Dominican Republic">Dominican Republic
+                            </option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="England, U.K.">England, U.K.</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea
+                            </option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Fiji Islands">Fiji Islands</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Gruziya">Gruziya</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-Bissau">Guinea-Bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kirgizstan">Kirgizstan</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea (South)">Korea (South)</option>
+                            <option value="Kosovo">Kosovo</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kypros">Kypros</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Micronesia">Micronesia</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nederland, Holland">Nederland, Holland</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe
+                            </option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenija">Slovenija</option>
+                            <option value="Solomon Island">Solomon Island
+                            </option>
+                            <option value="Somali">Somali</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand タイ</option>
+                            <option value="Timor-Leste">Timor-Leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="U.A.E">U.A.E</option>
+                            <option value="U.S.A">U.S.A</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraina">Ukraina</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Vatican City">Vatican City</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label">
+                            <input type="text" name="company_name" data-error="Error"
+                                   placeholder="Company name"
+                                   class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <input type="text" name="name" data-error="Error"
+                                   placeholder="Name" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <input type="email" name="email" data-error="Error"
+                                   placeholder="E-mail"
+                                   class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <input type="tel" name="phone" data-error="Error"
+                                   placeholder="Phone number"
+                                   class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <input type="text" name="subject" data-error="Error"
+                                   placeholder="Subject"
+                                   class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <textarea data-autoheight-min="180" name="message" data-autoheight
+                                      placeholder="Message"
+                                      data-error="Error" class="form__input"></textarea>
+                        </label>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LePx7YrAAAAAB-y7-fGkoWlxBxr9s8kxnRA0jKE"></div>
+                    <button type="button"
+                            class="form__button contact-modal-submit">Contact us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="image-modal" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close">
+                <img src="https://azfilter.jp/website-assets/img/close.svg" alt="">
+            </button>
+            
+
+            <div class="popup__form popover-modal">
+                <img class="modal-img-source" src="" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="feedback" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close"><img src="https://azfilter.jp/website-assets/img/close.svg"
+                                                                       alt=""></button>
+            <div class="popup__title">Feedback for » YC1H19N619AB</div>
+            <div class="catalog__container modal-alert alert d-none" role="alert">
+                <div class="alert-message"></div>
+            </div>
+            <div class="popup__form">
+                <form method="POST" class="form" id="feedBackModal">
+                    <input type="hidden" name="_token" value="LCycwhhArRJSx7qwpBdlCJbzhEnF25ZMLUD3Q3mN">                    <input type="hidden" name="txtProductId" class="txtProductId" value="31302" readonly/>
+                    <div class="form__row">
+                        <div class="form__line">
+                            <label class="form__label">
+                                <input type="text" name="txtName" data-error="Error"
+                                       placeholder="Your name"
+                                       class="form__input">
+                            </label>
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label">
+                                <input type="email" name="txtEmail" data-error="Error"
+                                       placeholder="Your email"
+                                       class="form__input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__radio-row">
+                        <div class="form__radio-title">Subject</div>
+                        <div class="form__radio-block">
+                            <label class="form__radio-btn-label">
+                                <input class="form__radio-btn-input" type="radio" value="subject1" name="selSubject"
+                                       checked>
+                                <span class="form__radio-btn-name">Crosses</span>
+                            </label>
+                            <label class="form__radio-btn-label">
+                                <input class="form__radio-btn-input" type="radio" value="subject2" name="selSubject">
+                                <span class="form__radio-btn-name">Application</span>
+                            </label>
+                            <label class="form__radio-btn-label">
+                                <input class="form__radio-btn-input" type="radio" value="subject3" name="selSubject">
+                                <span class="form__radio-btn-name">Specification</span>
+                            </label>
+                            <label class="form__radio-btn-label">
+                                <input class="form__radio-btn-input" type="radio" value="subject4" name="selSubject">
+                                <span class="form__radio-btn-name">Image</span>
+                            </label>
+                            <label class="form__radio-btn-label">
+                                <input class="form__radio-btn-input" type="radio" value="subject5" name="selSubject">
+                                <span class="form__radio-btn-name">Others</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">
+                            <div class="form__txt-title">Details</div>
+                            <div class="form__txt-subtitle">
+                                Common feedback:<br>-Additional/Correction in Cross reference<br>-Additional/Correction in Application
+                            </div>
+                            <textarea data-autoheight-min="180" name="txtDetails" data-autoheight data-error="Error"
+                                      class="form__input" required></textarea>
+                        </label>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LePx7YrAAAAAB-y7-fGkoWlxBxr9s8kxnRA0jKE"></div>
+                    <button type="button"
+                            class="form__button feedback-modal-submit">Contact us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230519135507"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js?_v=20230519135507"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js?_v=20230519135507"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://azfilter.jp/website-assets/js/app.min.js?_v=20230519135507"></script>
+
+<script type="text/javascript">
+    const Ziggy = {"url":"https:\/\/azfilter.jp","port":null,"defaults":{},"routes":{"debugbar.openhandler":{"uri":"_debugbar\/open","methods":["GET","HEAD"]},"debugbar.clockwork":{"uri":"_debugbar\/clockwork\/{id}","methods":["GET","HEAD"]},"debugbar.assets.css":{"uri":"_debugbar\/assets\/stylesheets","methods":["GET","HEAD"]},"debugbar.assets.js":{"uri":"_debugbar\/assets\/javascript","methods":["GET","HEAD"]},"debugbar.cache.delete":{"uri":"_debugbar\/cache\/{key}\/{tags?}","methods":["DELETE"]},"sanctum.csrf-cookie":{"uri":"sanctum\/csrf-cookie","methods":["GET","HEAD"]},"livewire.message":{"uri":"livewire\/message\/{name}","methods":["POST"]},"livewire.message-localized":{"uri":"{locale}\/livewire\/message\/{name}","methods":["POST"]},"livewire.upload-file":{"uri":"livewire\/upload-file","methods":["POST"]},"livewire.preview-file":{"uri":"livewire\/preview-file\/{filename}","methods":["GET","HEAD"]},"ignition.healthCheck":{"uri":"_ignition\/health-check","methods":["GET","HEAD"]},"ignition.executeSolution":{"uri":"_ignition\/execute-solution","methods":["POST"]},"ignition.updateConfig":{"uri":"_ignition\/update-config","methods":["POST"]},"front.home":{"uri":"\/","methods":["GET","HEAD"]},"front.":{"uri":"certificate\/{number}","methods":["GET","HEAD"]},"front.change-language":{"uri":"change-language\/{language}","methods":["GET","HEAD"]},"front.products":{"uri":"products","methods":["GET","HEAD"]},"front.products.air-filters":{"uri":"products\/air-filters","methods":["GET","HEAD"]},"front.products.cabin-filters":{"uri":"products\/cabin-filters","methods":["GET","HEAD"]},"front.products.oil-filters":{"uri":"products\/oil-filters","methods":["GET","HEAD"]},"front.products.transmission-filters":{"uri":"products\/transmission-filters","methods":["GET","HEAD"]},"front.products.fuel-filters":{"uri":"products\/fuel-filters","methods":["GET","HEAD"]},"front.contacts":{"uri":"contacts","methods":["GET","HEAD"]},"front.contacts.store":{"uri":"contacts","methods":["POST"]},"front.company.about":{"uri":"company\/about","methods":["GET","HEAD"]},"front.company.materials-technology":{"uri":"company\/materials-technology","methods":["GET","HEAD"]},"front.company.certificate":{"uri":"company\/certificate","methods":["GET","HEAD"]},"front.company.4a-bio":{"uri":"company\/4a-bio","methods":["GET","HEAD"]},"front.company.news":{"uri":"company\/news","methods":["GET","HEAD"]},"front.company.news.latin-2025":{"uri":"company\/news\/azumi-at-latin-2025","methods":["GET","HEAD"]},"front.company.news.panama-2024":{"uri":"company\/news\/azumi-at-panama-2024","methods":["GET","HEAD"]},"front.company.news.shines-dubai-2023":{"uri":"company\/news\/azumi-shines-at-dubai-automechanika-2023","methods":["GET","HEAD"]},"front.store-feedback":{"uri":"send-feedback","methods":["POST"]},"front.catalogue.search-part-number":{"uri":"catalogue\/catalogue\/search-part-number","methods":["GET","HEAD"]},"front.catalogue.application":{"uri":"catalogue\/catalogue\/application","methods":["GET","HEAD"]},"front.catalogue.product-size":{"uri":"catalogue\/catalogue\/product-size","methods":["GET","HEAD"]},"front.catalogue.index":{"uri":"catalogue\/catalogue\/{productId?}","methods":["GET","HEAD"]}}};
+
+    !function(t,r){"object"==typeof exports&&"undefined"!=typeof module?module.exports=r():"function"==typeof define&&define.amd?define(r):(t||self).route=r()}(this,function(){function t(t,r){for(var e=0;e<r.length;e++){var n=r[e];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,"symbol"==typeof(o=function(t,r){if("object"!=typeof t||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var n=e.call(t,"string");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(n.key))?o:String(o),n)}var o}function r(r,e,n){return e&&t(r.prototype,e),n&&t(r,n),Object.defineProperty(r,"prototype",{writable:!1}),r}function e(){return e=Object.assign?Object.assign.bind():function(t){for(var r=1;r<arguments.length;r++){var e=arguments[r];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])}return t},e.apply(this,arguments)}function n(t){return n=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(t){return t.__proto__||Object.getPrototypeOf(t)},n(t)}function o(t,r){return o=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,r){return t.__proto__=r,t},o(t,r)}function i(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){})),!0}catch(t){return!1}}function u(t,r,e){return u=i()?Reflect.construct.bind():function(t,r,e){var n=[null];n.push.apply(n,r);var i=new(Function.bind.apply(t,n));return e&&o(i,e.prototype),i},u.apply(null,arguments)}function f(t){var r="function"==typeof Map?new Map:void 0;return f=function(t){if(null===t||-1===Function.toString.call(t).indexOf("[native code]"))return t;if("function"!=typeof t)throw new TypeError("Super expression must either be null or a function");if(void 0!==r){if(r.has(t))return r.get(t);r.set(t,e)}function e(){return u(t,arguments,n(this).constructor)}return e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),o(e,t)},f(t)}var a=String.prototype.replace,c=/%20/g,l="RFC3986",s={default:l,formatters:{RFC1738:function(t){return a.call(t,c,"+")},RFC3986:function(t){return String(t)}},RFC1738:"RFC1738",RFC3986:l},v=Object.prototype.hasOwnProperty,p=Array.isArray,y=function(){for(var t=[],r=0;r<256;++r)t.push("%"+((r<16?"0":"")+r.toString(16)).toUpperCase());return t}(),d=function(t,r){for(var e=r&&r.plainObjects?Object.create(null):{},n=0;n<t.length;++n)void 0!==t[n]&&(e[n]=t[n]);return e},b={arrayToObject:d,assign:function(t,r){return Object.keys(r).reduce(function(t,e){return t[e]=r[e],t},t)},combine:function(t,r){return[].concat(t,r)},compact:function(t){for(var r=[{obj:{o:t},prop:"o"}],e=[],n=0;n<r.length;++n)for(var o=r[n],i=o.obj[o.prop],u=Object.keys(i),f=0;f<u.length;++f){var a=u[f],c=i[a];"object"==typeof c&&null!==c&&-1===e.indexOf(c)&&(r.push({obj:i,prop:a}),e.push(c))}return function(t){for(;t.length>1;){var r=t.pop(),e=r.obj[r.prop];if(p(e)){for(var n=[],o=0;o<e.length;++o)void 0!==e[o]&&n.push(e[o]);r.obj[r.prop]=n}}}(r),t},decode:function(t,r,e){var n=t.replace(/\+/g," ");if("iso-8859-1"===e)return n.replace(/%[0-9a-f]{2}/gi,unescape);try{return decodeURIComponent(n)}catch(t){return n}},encode:function(t,r,e,n,o){if(0===t.length)return t;var i=t;if("symbol"==typeof t?i=Symbol.prototype.toString.call(t):"string"!=typeof t&&(i=String(t)),"iso-8859-1"===e)return escape(i).replace(/%u[0-9a-f]{4}/gi,function(t){return"%26%23"+parseInt(t.slice(2),16)+"%3B"});for(var u="",f=0;f<i.length;++f){var a=i.charCodeAt(f);45===a||46===a||95===a||126===a||a>=48&&a<=57||a>=65&&a<=90||a>=97&&a<=122||o===s.RFC1738&&(40===a||41===a)?u+=i.charAt(f):a<128?u+=y[a]:a<2048?u+=y[192|a>>6]+y[128|63&a]:a<55296||a>=57344?u+=y[224|a>>12]+y[128|a>>6&63]+y[128|63&a]:(a=65536+((1023&a)<<10|1023&i.charCodeAt(f+=1)),u+=y[240|a>>18]+y[128|a>>12&63]+y[128|a>>6&63]+y[128|63&a])}return u},isBuffer:function(t){return!(!t||"object"!=typeof t||!(t.constructor&&t.constructor.isBuffer&&t.constructor.isBuffer(t)))},isRegExp:function(t){return"[object RegExp]"===Object.prototype.toString.call(t)},maybeMap:function(t,r){if(p(t)){for(var e=[],n=0;n<t.length;n+=1)e.push(r(t[n]));return e}return r(t)},merge:function t(r,e,n){if(!e)return r;if("object"!=typeof e){if(p(r))r.push(e);else{if(!r||"object"!=typeof r)return[r,e];(n&&(n.plainObjects||n.allowPrototypes)||!v.call(Object.prototype,e))&&(r[e]=!0)}return r}if(!r||"object"!=typeof r)return[r].concat(e);var o=r;return p(r)&&!p(e)&&(o=d(r,n)),p(r)&&p(e)?(e.forEach(function(e,o){if(v.call(r,o)){var i=r[o];i&&"object"==typeof i&&e&&"object"==typeof e?r[o]=t(i,e,n):r.push(e)}else r[o]=e}),r):Object.keys(e).reduce(function(r,o){var i=e[o];return r[o]=v.call(r,o)?t(r[o],i,n):i,r},o)}},h=Object.prototype.hasOwnProperty,m={brackets:function(t){return t+"[]"},comma:"comma",indices:function(t,r){return t+"["+r+"]"},repeat:function(t){return t}},g=Array.isArray,j=String.prototype.split,w=Array.prototype.push,O=function(t,r){w.apply(t,g(r)?r:[r])},E=Date.prototype.toISOString,R=s.default,S={addQueryPrefix:!1,allowDots:!1,charset:"utf-8",charsetSentinel:!1,delimiter:"&",encode:!0,encoder:b.encode,encodeValuesOnly:!1,format:R,formatter:s.formatters[R],indices:!1,serializeDate:function(t){return E.call(t)},skipNulls:!1,strictNullHandling:!1},T=function t(r,e,n,o,i,u,f,a,c,l,s,v,p,y){var d,h=r;if("function"==typeof f?h=f(e,h):h instanceof Date?h=l(h):"comma"===n&&g(h)&&(h=b.maybeMap(h,function(t){return t instanceof Date?l(t):t})),null===h){if(o)return u&&!p?u(e,S.encoder,y,"key",s):e;h=""}if("string"==typeof(d=h)||"number"==typeof d||"boolean"==typeof d||"symbol"==typeof d||"bigint"==typeof d||b.isBuffer(h)){if(u){var m=p?e:u(e,S.encoder,y,"key",s);if("comma"===n&&p){for(var w=j.call(String(h),","),E="",R=0;R<w.length;++R)E+=(0===R?"":",")+v(u(w[R],S.encoder,y,"value",s));return[v(m)+"="+E]}return[v(m)+"="+v(u(h,S.encoder,y,"value",s))]}return[v(e)+"="+v(String(h))]}var T,k=[];if(void 0===h)return k;if("comma"===n&&g(h))T=[{value:h.length>0?h.join(",")||null:void 0}];else if(g(f))T=f;else{var x=Object.keys(h);T=a?x.sort(a):x}for(var C=0;C<T.length;++C){var N=T[C],D="object"==typeof N&&void 0!==N.value?N.value:h[N];if(!i||null!==D){var F=g(h)?"function"==typeof n?n(e,N):e:e+(c?"."+N:"["+N+"]");O(k,t(D,F,n,o,i,u,f,a,c,l,s,v,p,y))}}return k},k=Object.prototype.hasOwnProperty,x=Array.isArray,C={allowDots:!1,allowPrototypes:!1,arrayLimit:20,charset:"utf-8",charsetSentinel:!1,comma:!1,decoder:b.decode,delimiter:"&",depth:5,ignoreQueryPrefix:!1,interpretNumericEntities:!1,parameterLimit:1e3,parseArrays:!0,plainObjects:!1,strictNullHandling:!1},N=function(t){return t.replace(/&#(\d+);/g,function(t,r){return String.fromCharCode(parseInt(r,10))})},D=function(t,r){return t&&"string"==typeof t&&r.comma&&t.indexOf(",")>-1?t.split(","):t},F=function(t,r,e,n){if(t){var o=e.allowDots?t.replace(/\.([^.[]+)/g,"[$1]"):t,i=/(\[[^[\]]*])/g,u=e.depth>0&&/(\[[^[\]]*])/.exec(o),f=u?o.slice(0,u.index):o,a=[];if(f){if(!e.plainObjects&&k.call(Object.prototype,f)&&!e.allowPrototypes)return;a.push(f)}for(var c=0;e.depth>0&&null!==(u=i.exec(o))&&c<e.depth;){if(c+=1,!e.plainObjects&&k.call(Object.prototype,u[1].slice(1,-1))&&!e.allowPrototypes)return;a.push(u[1])}return u&&a.push("["+o.slice(u.index)+"]"),function(t,r,e,n){for(var o=n?r:D(r,e),i=t.length-1;i>=0;--i){var u,f=t[i];if("[]"===f&&e.parseArrays)u=[].concat(o);else{u=e.plainObjects?Object.create(null):{};var a="["===f.charAt(0)&&"]"===f.charAt(f.length-1)?f.slice(1,-1):f,c=parseInt(a,10);e.parseArrays||""!==a?!isNaN(c)&&f!==a&&String(c)===a&&c>=0&&e.parseArrays&&c<=e.arrayLimit?(u=[])[c]=o:"__proto__"!==a&&(u[a]=o):u={0:o}}o=u}return o}(a,r,e,n)}},P=function(t,r){var e=function(t){if(!t)return C;if(null!=t.decoder&&"function"!=typeof t.decoder)throw new TypeError("Decoder has to be a function.");if(void 0!==t.charset&&"utf-8"!==t.charset&&"iso-8859-1"!==t.charset)throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");return{allowDots:void 0===t.allowDots?C.allowDots:!!t.allowDots,allowPrototypes:"boolean"==typeof t.allowPrototypes?t.allowPrototypes:C.allowPrototypes,arrayLimit:"number"==typeof t.arrayLimit?t.arrayLimit:C.arrayLimit,charset:void 0===t.charset?C.charset:t.charset,charsetSentinel:"boolean"==typeof t.charsetSentinel?t.charsetSentinel:C.charsetSentinel,comma:"boolean"==typeof t.comma?t.comma:C.comma,decoder:"function"==typeof t.decoder?t.decoder:C.decoder,delimiter:"string"==typeof t.delimiter||b.isRegExp(t.delimiter)?t.delimiter:C.delimiter,depth:"number"==typeof t.depth||!1===t.depth?+t.depth:C.depth,ignoreQueryPrefix:!0===t.ignoreQueryPrefix,interpretNumericEntities:"boolean"==typeof t.interpretNumericEntities?t.interpretNumericEntities:C.interpretNumericEntities,parameterLimit:"number"==typeof t.parameterLimit?t.parameterLimit:C.parameterLimit,parseArrays:!1!==t.parseArrays,plainObjects:"boolean"==typeof t.plainObjects?t.plainObjects:C.plainObjects,strictNullHandling:"boolean"==typeof t.strictNullHandling?t.strictNullHandling:C.strictNullHandling}}(r);if(""===t||null==t)return e.plainObjects?Object.create(null):{};for(var n="string"==typeof t?function(t,r){var e,n={},o=(r.ignoreQueryPrefix?t.replace(/^\?/,""):t).split(r.delimiter,Infinity===r.parameterLimit?void 0:r.parameterLimit),i=-1,u=r.charset;if(r.charsetSentinel)for(e=0;e<o.length;++e)0===o[e].indexOf("utf8=")&&("utf8=%E2%9C%93"===o[e]?u="utf-8":"utf8=%26%2310003%3B"===o[e]&&(u="iso-8859-1"),i=e,e=o.length);for(e=0;e<o.length;++e)if(e!==i){var f,a,c=o[e],l=c.indexOf("]="),s=-1===l?c.indexOf("="):l+1;-1===s?(f=r.decoder(c,C.decoder,u,"key"),a=r.strictNullHandling?null:""):(f=r.decoder(c.slice(0,s),C.decoder,u,"key"),a=b.maybeMap(D(c.slice(s+1),r),function(t){return r.decoder(t,C.decoder,u,"value")})),a&&r.interpretNumericEntities&&"iso-8859-1"===u&&(a=N(a)),c.indexOf("[]=")>-1&&(a=x(a)?[a]:a),n[f]=k.call(n,f)?b.combine(n[f],a):a}return n}(t,e):t,o=e.plainObjects?Object.create(null):{},i=Object.keys(n),u=0;u<i.length;++u){var f=i[u],a=F(f,n[f],e,"string"==typeof t);o=b.merge(o,a,e)}return b.compact(o)},$=/*#__PURE__*/function(){function t(t,r,e){var n,o;this.name=t,this.definition=r,this.bindings=null!=(n=r.bindings)?n:{},this.wheres=null!=(o=r.wheres)?o:{},this.config=e}var e=t.prototype;return e.matchesUrl=function(t){var r=this;if(!this.definition.methods.includes("GET"))return!1;var e=this.template.replace(/(\/?){([^}?]*)(\??)}/g,function(t,e,n,o){var i,u="(?<"+n+">"+((null==(i=r.wheres[n])?void 0:i.replace(/(^\^)|(\$$)/g,""))||"[^/?]+")+")";return o?"("+e+u+")?":""+e+u}).replace(/^\w+:\/\//,""),n=t.replace(/^\w+:\/\//,"").split("?"),o=n[0],i=n[1],u=new RegExp("^"+e+"/?$").exec(o);if(u){for(var f in u.groups)u.groups[f]="string"==typeof u.groups[f]?decodeURIComponent(u.groups[f]):u.groups[f];return{params:u.groups,query:P(i)}}return!1},e.compile=function(t){var r=this,e=this.parameterSegments;return e.length?this.template.replace(/{([^}?]+)(\??)}/g,function(n,o,i){var u,f,a;if(!i&&[null,void 0].includes(t[o]))throw new Error("Ziggy error: '"+o+"' parameter is required for route '"+r.name+"'.");if(e[e.length-1].name===o&&".*"===r.wheres[o])return encodeURIComponent(null!=(a=t[o])?a:"").replace(/%2F/g,"/");if(r.wheres[o]&&!new RegExp("^"+(i?"("+r.wheres[o]+")?":r.wheres[o])+"$").test(null!=(u=t[o])?u:""))throw new Error("Ziggy error: '"+o+"' parameter does not match required format '"+r.wheres[o]+"' for route '"+r.name+"'.");return encodeURIComponent(null!=(f=t[o])?f:"")}).replace(this.origin+"//",this.origin+"/").replace(/\/+$/,""):this.template},r(t,[{key:"template",get:function(){return(this.origin+"/"+this.definition.uri).replace(/\/+$/,"")}},{key:"origin",get:function(){return this.config.absolute?this.definition.domain?""+this.config.url.match(/^\w+:\/\//)[0]+this.definition.domain+(this.config.port?":"+this.config.port:""):this.config.url:""}},{key:"parameterSegments",get:function(){var t,r;return null!=(t=null==(r=this.template.match(/{[^}?]+\??}/g))?void 0:r.map(function(t){return{name:t.replace(/{|\??}/g,""),required:!/\?}$/.test(t)}}))?t:[]}}]),t}(),A=/*#__PURE__*/function(t){var n,i;function u(r,n,o,i){var u;if(void 0===o&&(o=!0),(u=t.call(this)||this).t=null!=i?i:"undefined"!=typeof Ziggy?Ziggy:null==globalThis?void 0:globalThis.Ziggy,u.t=e({},u.t,{absolute:o}),r){if(!u.t.routes[r])throw new Error("Ziggy error: route '"+r+"' is not in the route list.");u.i=new $(r,u.t.routes[r],u.t),u.u=u.l(n)}return u}i=t,(n=u).prototype=Object.create(i.prototype),n.prototype.constructor=n,o(n,i);var f=u.prototype;return f.toString=function(){var t=this,r=Object.keys(this.u).filter(function(r){return!t.i.parameterSegments.some(function(t){return t.name===r})}).filter(function(t){return"_query"!==t}).reduce(function(r,n){var o;return e({},r,((o={})[n]=t.u[n],o))},{});return this.i.compile(this.u)+function(t,r){var e,n=t,o=function(t){if(!t)return S;if(null!=t.encoder&&"function"!=typeof t.encoder)throw new TypeError("Encoder has to be a function.");var r=t.charset||S.charset;if(void 0!==t.charset&&"utf-8"!==t.charset&&"iso-8859-1"!==t.charset)throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");var e=s.default;if(void 0!==t.format){if(!h.call(s.formatters,t.format))throw new TypeError("Unknown format option provided.");e=t.format}var n=s.formatters[e],o=S.filter;return("function"==typeof t.filter||g(t.filter))&&(o=t.filter),{addQueryPrefix:"boolean"==typeof t.addQueryPrefix?t.addQueryPrefix:S.addQueryPrefix,allowDots:void 0===t.allowDots?S.allowDots:!!t.allowDots,charset:r,charsetSentinel:"boolean"==typeof t.charsetSentinel?t.charsetSentinel:S.charsetSentinel,delimiter:void 0===t.delimiter?S.delimiter:t.delimiter,encode:"boolean"==typeof t.encode?t.encode:S.encode,encoder:"function"==typeof t.encoder?t.encoder:S.encoder,encodeValuesOnly:"boolean"==typeof t.encodeValuesOnly?t.encodeValuesOnly:S.encodeValuesOnly,filter:o,format:e,formatter:n,serializeDate:"function"==typeof t.serializeDate?t.serializeDate:S.serializeDate,skipNulls:"boolean"==typeof t.skipNulls?t.skipNulls:S.skipNulls,sort:"function"==typeof t.sort?t.sort:null,strictNullHandling:"boolean"==typeof t.strictNullHandling?t.strictNullHandling:S.strictNullHandling}}(r);"function"==typeof o.filter?n=(0,o.filter)("",n):g(o.filter)&&(e=o.filter);var i=[];if("object"!=typeof n||null===n)return"";var u=m[r&&r.arrayFormat in m?r.arrayFormat:r&&"indices"in r?r.indices?"indices":"repeat":"indices"];e||(e=Object.keys(n)),o.sort&&e.sort(o.sort);for(var f=0;f<e.length;++f){var a=e[f];o.skipNulls&&null===n[a]||O(i,T(n[a],a,u,o.strictNullHandling,o.skipNulls,o.encode?o.encoder:null,o.filter,o.sort,o.allowDots,o.serializeDate,o.format,o.formatter,o.encodeValuesOnly,o.charset))}var c=i.join(o.delimiter),l=!0===o.addQueryPrefix?"?":"";return o.charsetSentinel&&(l+="iso-8859-1"===o.charset?"utf8=%26%2310003%3B&":"utf8=%E2%9C%93&"),c.length>0?l+c:""}(e({},r,this.u._query),{addQueryPrefix:!0,arrayFormat:"indices",encodeValuesOnly:!0,skipNulls:!0,encoder:function(t,r){return"boolean"==typeof t?Number(t):r(t)}})},f.v=function(t){var r=this;t?this.t.absolute&&t.startsWith("/")&&(t=this.p().host+t):t=this.h();var n={},o=Object.entries(this.t.routes).find(function(e){return n=new $(e[0],e[1],r.t).matchesUrl(t)})||[void 0,void 0];return e({name:o[0]},n,{route:o[1]})},f.h=function(){var t=this.p(),r=t.pathname,e=t.search;return(this.t.absolute?t.host+r:r.replace(this.t.url.replace(/^\w*:\/\/[^/]+/,""),"").replace(/^\/+/,"/"))+e},f.current=function(t,r){var n=this.v(),o=n.name,i=n.params,u=n.query,f=n.route;if(!t)return o;var a=new RegExp("^"+t.replace(/\./g,"\\.").replace(/\*/g,".*")+"$").test(o);if([null,void 0].includes(r)||!a)return a;var c=new $(o,f,this.t);r=this.l(r,c);var l=e({},i,u);return!(!Object.values(r).every(function(t){return!t})||Object.values(l).some(function(t){return void 0!==t}))||Object.entries(r).every(function(t){return l[t[0]]==t[1]})},f.p=function(){var t,r,e,n,o,i,u="undefined"!=typeof window?window.location:{},f=u.host,a=u.pathname,c=u.search;return{host:null!=(t=null==(r=this.t.location)?void 0:r.host)?t:void 0===f?"":f,pathname:null!=(e=null==(n=this.t.location)?void 0:n.pathname)?e:void 0===a?"":a,search:null!=(o=null==(i=this.t.location)?void 0:i.search)?o:void 0===c?"":c}},f.has=function(t){return Object.keys(this.t.routes).includes(t)},f.l=function(t,r){var n=this;void 0===t&&(t={}),void 0===r&&(r=this.i),null!=t||(t={}),t=["string","number"].includes(typeof t)?[t]:t;var o=r.parameterSegments.filter(function(t){return!n.t.defaults[t.name]});if(Array.isArray(t))t=t.reduce(function(t,r,n){var i,u;return e({},t,o[n]?((i={})[o[n].name]=r,i):"object"==typeof r?r:((u={})[r]="",u))},{});else if(1===o.length&&!t[o[0].name]&&(t.hasOwnProperty(Object.values(r.bindings)[0])||t.hasOwnProperty("id"))){var i;(i={})[o[0].name]=t,t=i}return e({},this.m(r),this.g(t,r))},f.m=function(t){var r=this;return t.parameterSegments.filter(function(t){return r.t.defaults[t.name]}).reduce(function(t,n,o){var i,u=n.name;return e({},t,((i={})[u]=r.t.defaults[u],i))},{})},f.g=function(t,r){var n=r.bindings,o=r.parameterSegments;return Object.entries(t).reduce(function(t,r){var i,u,f=r[0],a=r[1];if(!a||"object"!=typeof a||Array.isArray(a)||!o.some(function(t){return t.name===f}))return e({},t,((u={})[f]=a,u));if(!a.hasOwnProperty(n[f])){if(!a.hasOwnProperty("id"))throw new Error("Ziggy error: object passed as '"+f+"' parameter is missing route model binding key '"+n[f]+"'.");n[f]="id"}return e({},t,((i={})[f]=a[n[f]],i))},{})},f.valueOf=function(){return this.toString()},f.check=function(t){return this.has(t)},r(u,[{key:"params",get:function(){var t=this.v();return e({},t.params,t.query)}}]),u}(/*#__PURE__*/f(String));return function(t,r,e,n){var o=new A(t,r,e,n);return t?o.toString():o}});
+
+</script><script src="https://azfilter.jp/website-assets/js/custom.js"></script>
+<script src="https://azfilter.jp/website-assets/js/contact-modal.js"></script>
+<script src="https://azfilter.jp/website-assets/js/catalogue-search.js?v1.3"></script>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const formData = JSON.parse('{"brands":[{"brand_id":1,"brand":"ACURA"},{"brand_id":2,"brand":"ALFA ROMEO"},{"brand_id":3,"brand":"ASIA MOTORS"},{"brand_id":4,"brand":"ASTON MARTIN"},{"brand_id":5,"brand":"AUDI"},{"brand_id":6,"brand":"BENTLEY"},{"brand_id":7,"brand":"BMW"},{"brand_id":8,"brand":"BMW (Alpina)"},{"brand_id":10,"brand":"BUICK (GM)"},{"brand_id":12,"brand":"CADILLAC (GM)"},{"brand_id":15,"brand":"CHEVROLET (GM)"},{"brand_id":16,"brand":"CHRYSLER"},{"brand_id":18,"brand":"CITROEN"},{"brand_id":20,"brand":"DAEWOO"},{"brand_id":22,"brand":"DAIHATSU"},{"brand_id":23,"brand":"DAIHATSU (Piaggio)"},{"brand_id":24,"brand":"DODGE"},{"brand_id":25,"brand":"FERRARI"},{"brand_id":26,"brand":"FIAT"},{"brand_id":27,"brand":"FORD"},{"brand_id":28,"brand":"MERCURY (FORD)"},{"brand_id":29,"brand":"FORD (USA)"},{"brand_id":31,"brand":"HINO"},{"brand_id":32,"brand":"HONDA"},{"brand_id":35,"brand":"HUMMER"},{"brand_id":36,"brand":"HYUNDAI"},{"brand_id":37,"brand":"INFINITI"},{"brand_id":38,"brand":"ISUZU"},{"brand_id":39,"brand":"IVECO"},{"brand_id":40,"brand":"JAGUAR"},{"brand_id":42,"brand":"JEEP"},{"brand_id":43,"brand":"KIA"},{"brand_id":44,"brand":"LADA"},{"brand_id":45,"brand":"LANCIA"},{"brand_id":46,"brand":"LAND ROVER"},{"brand_id":48,"brand":"LEXUS"},{"brand_id":49,"brand":"LIGIER AUTOMOBILES"},{"brand_id":50,"brand":"LINCOLN"},{"brand_id":51,"brand":"LONDON TAXI (Carbodies)"},{"brand_id":53,"brand":"LOTUS"},{"brand_id":54,"brand":"MASERATI"},{"brand_id":55,"brand":"MAZDA"},{"brand_id":56,"brand":"MAZDA JAPAN FORD"},{"brand_id":58,"brand":"MERCEDES-BENZ"},{"brand_id":59,"brand":"MICROCAR"},{"brand_id":60,"brand":"MINI"},{"brand_id":61,"brand":"MITSUBISHI"},{"brand_id":62,"brand":"NISSAN"},{"brand_id":63,"brand":"NISSAN DIESEL UD"},{"brand_id":65,"brand":"OLDSMOBILE (GM)"},{"brand_id":66,"brand":"OPEL"},{"brand_id":67,"brand":"OPEL (Vauxhall)"},{"brand_id":68,"brand":"PERODUA"},{"brand_id":69,"brand":"PEUGEOT"},{"brand_id":70,"brand":"PEUGEOT(Mega\/Aixav)"},{"brand_id":72,"brand":"PONTIAC (GM)"},{"brand_id":73,"brand":"PORSCHE"},{"brand_id":74,"brand":"PROTON"},{"brand_id":75,"brand":"RENAULT"},{"brand_id":76,"brand":"ROLLS-ROYCE"},{"brand_id":77,"brand":"ROVER"},{"brand_id":79,"brand":"SAAB"},{"brand_id":80,"brand":"SANTANA MOTOR"},{"brand_id":81,"brand":"SEAT"},{"brand_id":82,"brand":"SKODA"},{"brand_id":83,"brand":"SMART"},{"brand_id":84,"brand":"SSANGYONG"},{"brand_id":85,"brand":"SUBARU"},{"brand_id":86,"brand":"SUZUKI"},{"brand_id":87,"brand":"TATA MOTORS"},{"brand_id":88,"brand":"TOYOTA"},{"brand_id":90,"brand":"VOLVO"},{"brand_id":91,"brand":"VOLKSWAGEN"},{"brand_id":92,"brand":"ZASTAVA"},{"brand_id":93,"brand":"HOLDEN"},{"brand_id":96,"brand":"DACIA (Renault)"},{"brand_id":99,"brand":"BOBCAT"},{"brand_id":100,"brand":"KOMATSU"},{"brand_id":101,"brand":"SCANIA"},{"brand_id":227,"brand":"ARO"},{"brand_id":232,"brand":"GAZ"},{"brand_id":236,"brand":"LDV (Leyland-Daf Vans)"},{"brand_id":237,"brand":"MG (SAIC)"},{"brand_id":238,"brand":"MOSKVICH (AZLK)"},{"brand_id":241,"brand":"UAZ"},{"brand_id":247,"brand":"KAMAZ"},{"brand_id":249,"brand":"MAN TRUCK"},{"brand_id":264,"brand":"KUBOTA"},{"brand_id":271,"brand":"DAF"},{"brand_id":272,"brand":"BOVA"},{"brand_id":274,"brand":"CATERPILLAR"},{"brand_id":278,"brand":"HOWO"},{"brand_id":279,"brand":"KING LONG BUS"},{"brand_id":285,"brand":"DATSUN"},{"brand_id":343,"brand":"JOHN DEERE"},{"brand_id":354,"brand":"LIFAN"},{"brand_id":424,"brand":"DONGFENG"},{"brand_id":426,"brand":"LAMBORGHINI"},{"brand_id":428,"brand":"LUXGEN"},{"brand_id":429,"brand":"MITSUOKA"},{"brand_id":431,"brand":"GEELY"},{"brand_id":440,"brand":"NAZA"},{"brand_id":441,"brand":"MAHINDRA"},{"brand_id":442,"brand":"MARUTI SUZUKI"},{"brand_id":443,"brand":"TESLA"},{"brand_id":444,"brand":"FOTON"},{"brand_id":445,"brand":"JAC"},{"brand_id":446,"brand":"RAVON"},{"brand_id":447,"brand":"BAW"},{"brand_id":448,"brand":"CHERY"},{"brand_id":449,"brand":"Great Wall Motors"},{"brand_id":451,"brand":"Yuchai"},{"brand_id":453,"brand":"BYD"},{"brand_id":454,"brand":"CHEVROLET (SGM)"},{"brand_id":455,"brand":"SAIC"},{"brand_id":460,"brand":"FENDT(AGCO)"},{"brand_id":461,"brand":"JMC"},{"brand_id":462,"brand":"CHANGAN"},{"brand_id":463,"brand":"GMC"},{"brand_id":464,"brand":"BRILLIANCE"},{"brand_id":465,"brand":"ZX AUTO (Zhongxing)"},{"brand_id":468,"brand":"GENESIS"},{"brand_id":469,"brand":"SAMSUNG"},{"brand_id":470,"brand":"FAW"},{"brand_id":471,"brand":"PLYMOUTH"},{"brand_id":472,"brand":"EXEED (CHERY)"},{"brand_id":473,"brand":"YUTONG"},{"brand_id":474,"brand":"NEOPLAN"},{"brand_id":475,"brand":"FREIGHTLINER"},{"brand_id":476,"brand":"GAC"},{"brand_id":477,"brand":"JCB"},{"brand_id":478,"brand":"MAXUS"},{"brand_id":479,"brand":"HAVAL"},{"brand_id":480,"brand":"CUPRA"},{"brand_id":481,"brand":"ISEKI"},{"brand_id":482,"brand":"DOOSAN"},{"brand_id":484,"brand":"SOUEAST"},{"brand_id":486,"brand":"HYUNDAI (BEIJING)"},{"brand_id":487,"brand":"KIA (DYK)"},{"brand_id":489,"brand":"OMODA (CHERY)"},{"brand_id":492,"brand":"BAIC"},{"brand_id":493,"brand":"JETOUR"},{"brand_id":495,"brand":"LiXIANG"},{"brand_id":496,"brand":"ZEEKR"},{"brand_id":497,"brand":"TANK"},{"brand_id":499,"brand":"AVATR"},{"brand_id":501,"brand":"ZOTYE"},{"brand_id":503,"brand":"RAM"},{"brand_id":504,"brand":"LYNK & CO"},{"brand_id":508,"brand":"FORTHING"},{"brand_id":509,"brand":"HIPHI"},{"brand_id":510,"brand":"VOYAH"},{"brand_id":511,"brand":"KAIYI"},{"brand_id":512,"brand":"MITSUBISHI (GAC)"},{"brand_id":513,"brand":"MAZDA (CHANGAN)"},{"brand_id":514,"brand":"MAZDA (FAW)"},{"brand_id":515,"brand":"SKODA (SVW)"},{"brand_id":516,"brand":"JETTA"},{"brand_id":517,"brand":"JAECOO (CHERY)"},{"brand_id":518,"brand":"HONGQI"},{"brand_id":521,"brand":"WEY"},{"brand_id":522,"brand":"AITO"},{"brand_id":523,"brand":"LIVAN"},{"brand_id":525,"brand":"KG MOBILITY"},{"brand_id":526,"brand":"XCITE"},{"brand_id":527,"brand":"HONDA (GAC)"},{"brand_id":528,"brand":"HONDA (DONGFENG)"},{"brand_id":529,"brand":"ORA"},{"brand_id":530,"brand":"XIAOMI"},{"brand_id":531,"brand":"VOLKSWAGEN (FAW)"},{"brand_id":532,"brand":"VOLKSWAGEN (SVW)"},{"brand_id":533,"brand":"AUDI (FAW)"},{"brand_id":534,"brand":"AUDI (SAIC)"},{"brand_id":535,"brand":"INFINITI (DFAC)"},{"brand_id":536,"brand":"NISSAN (DFAC)"},{"brand_id":537,"brand":"TOYOTA (FAW)"},{"brand_id":538,"brand":"TOYOTA (GAC)"},{"brand_id":539,"brand":"BELGEE"},{"brand_id":540,"brand":"MERCEDES-BENZ (BBDC)"},{"brand_id":541,"brand":"CITRO\u00cbN (DF-PSA)"},{"brand_id":542,"brand":"PEUGEOT (DF-PSA)"},{"brand_id":543,"brand":"FORD (JMC)"},{"brand_id":544,"brand":"SERES"},{"brand_id":547,"brand":"ACURA (GAC)"},{"brand_id":548,"brand":"EVOLUTE"},{"brand_id":549,"brand":"DEEPAL"},{"brand_id":550,"brand":"DS"},{"brand_id":552,"brand":"TENET"},{"brand_id":553,"brand":"ROX"}],"profile_types":[{"type_id":25,"type_name":"AIR FILTER"},{"type_id":28,"type_name":"AIR FILTER (DRYER SPIN ON)"},{"type_id":7,"type_name":"CABIN FILTER"},{"type_id":469,"type_name":"CABIN FILTER BIOFUNCTIONAL"},{"type_id":33,"type_name":"DIESEL FILTER (INJECTOR)"},{"type_id":11,"type_name":"DIESEL FILTER (SPIN-ON)"},{"type_id":12,"type_name":"FUEL FILTER (ELEMENT)"},{"type_id":16,"type_name":"FUEL FILTER (IN-TANK)"},{"type_id":401,"type_name":"FUEL FILTER ASS~Y (IN-TANK)"},{"type_id":133,"type_name":"FUEL STRAINER"},{"type_id":24,"type_name":"HYDRAULIC FILTER ELEMENT"},{"type_id":31,"type_name":"HYDRAULIC FILTER SPIN-ON"},{"type_id":445,"type_name":"IN-TANK FUEL PUMP"},{"type_id":444,"type_name":"MANUAL DIESEL PUMP"},{"type_id":9,"type_name":"OIL FILTER (ELEMENT)"},{"type_id":8,"type_name":"OIL FILTER (SPIN-ON)"},{"type_id":32,"type_name":"PETROL FILTER (INJECTOR & CARBURETOR)"},{"type_id":443,"type_name":"SENSOR FUEL FILTER"},{"type_id":17,"type_name":"TRANSMISSION FILTER"}],"models":[],"bodys":[],"years":[],"enginenos":[],"engines":[],"specifications":[]}');
+
+            function getFormData(endpoint, data, func) {
+                $.ajax({
+                    beforeSend: function() {
+                        lockScreen();
+                    },
+                    url: `/api/${endpoint}`,
+                    type: 'GET',
+                    data: data,
+                    dataType: 'json',
+                    success: func,
+                    error: function(data) {
+
+                    },
+                    complete: function() {
+                        unLockScreen();
+                    },
+                });
+            }
+
+            function createInitialForm(el, fKey, val, title, qKey) {
+                if (formData[fKey].length > 0) {
+                    $(el).empty();
+                    $(el).removeAttr('disabled');
+                    formData[fKey].forEach(f => {
+                        $(el).append(`<option value="${f[val]}" ${params.get(qKey) == f[val] || params.getAll(`${qKey}[]`).some(qv => qv == f[val]) ? 'selected' : ''}>${typeof title === 'function' ? title(f) : f[title]}</option>`);
+                    });
+                    $(el).selectpicker('refresh');
+                }
+            }
+
+            createInitialForm('#selClass', 'models', 'model_id', f => `${f.class ?? ''} ${f._model}`, 'model_id');
+            createInitialForm('#selBody', 'bodys', 'body_mgc', 'body_mgc', 'body');
+            createInitialForm('#selYear', 'years', 'year', 'year', 'year');
+            createInitialForm('#selEngine', 'enginenos', 'eng_no', 'eng_no', 'eng_no');
+            createInitialForm('#selEnginevolume', 'engines', 'eng_vol', 'eng_vol', 'engine');
+
+            function createSpecificationsForm(specifications) {
+                if (specifications.length > 0) {
+                    $('#specs-form').removeClass('d-none');
+                    $('.specs-container').empty();
+
+                    specifications.forEach(s => {
+                        $('.specs-container').append(`<div class="form__select-line">
+                            <div class="form__name">${s.spec_name}</div>
+                            <div class="form__line">
+                                <label class="form__label">
+                                    <input type="text" name="specs-size[${s.spec_id}]" data-error="Error" placeholder=""
+                                        class="form__input"
+                                        value="${params.get(`specs-size[${s.spec_id}]`) ?? ''}">
+                                </label>
+                            </div>
+                            <div class="form__line">
+                                <label for="spec-size-${s.spec_id}"></label>
+                                <select name="specs-size-adjust[${s.spec_id}]" class="form__select profile-dropdown" id="spec-size-${s.spec_id}">
+                                    <option value="0" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '0' ? 'selected' : ''}>0</option>
+                                    <option value="0.5" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '0.5' ? 'selected' : ''}>0.5</option>
+                                    <option value="1" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '1' ? 'selected' : ''}>1</option>
+                                    <option value="2" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '2' ? 'selected' : ''}>2</option>
+                                    <option value="3" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '3' ? 'selected' : ''}>3</option>
+                                    <option value="5" ${params.get(`specs-size-adjust[${s.spec_id}]`) == '5' ? 'selected' : ''}>5</option>
+                                </select>
+                            </div>
+                        </div>`);
+
+                        $(`#spec-size-${s.spec_id}`).selectpicker();
+                    });
+                }
+            }
+
+            createSpecificationsForm(formData.specifications);
+
+            window.addEventListener('reinitializationSelect', event => {
+                initializeAllDropdowns();
+            });
+
+            window.addEventListener('reinitializationProfileSelect', event => {
+                $(".profile-dropdown").selectpicker({
+                    dropupAuto: false,
+                    doneButtonText: "Search"
+                });
+            });
+
+            $(document).on('change', '#selBrand', function () {
+                let brand_id = $('#selBrand').val();
+                if (!brand_id) return;
+                getFormData('models', {brand_id: brand_id}, function (data) {
+                    $('#selClass').empty();
+                    $('#selClass').removeAttr('disabled');
+
+                    data.forEach(m => {
+                        $('#selClass').append(`<option value="${m.model_id}">${m.class ?? ''} ${m._model}</option>`);
+                    });
+
+                    $('#selClass').selectpicker('refresh');
+                });
+            });
+
+            $(document).on('keyup', '#partno-search', function (event) {
+                if (event.target.value.length >= 4) {
+                    getFormData('part_suggestions', {part_no: event.target.value}, function (data) {
+                        $('#part-suggestions').empty();
+                        data.forEach(p => {
+                            $('#part-suggestions').append(`<div class="form__row"><div class="form__line"><div class="suggestion_parts">
+                                <a href="/catalogue/catalogue/${p.pid}">${p.part_no} || ${p.p_brand} || ${p.type_name}</a>
+                            </div></div></div>`);
+                        });
+                    });
+                } else {
+                    $('#part-suggestions').empty();
+                }
+            });
+
+            $(document).ready(function () {
+                $('#ss_type_id_js').selectpicker('val', params.get('type_id') ?? '');
+                $('#selBrand').selectpicker('val', params.get('brand_id') ?? '');
+            });
+
+            $(document).on('change', '#ss_type_id_js', function () {
+                let profileType = $('#ss_type_id_js').val();
+                if (! profileType) return;
+                getFormData('specifications', {type_id: profileType}, function (data) {
+                    $('#specs-form').removeClass('d-none');
+                    $('.specs-container').empty();
+
+                    if (data.length > 0) {
+                        createSpecificationsForm(data);
+                    }
+                });
+
+                $("#ss_type_id_js").selectpicker('refresh');
+            });
+        </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"272710c34fae4f6eb0f3c7d1bf2d0aff","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
